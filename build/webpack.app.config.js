@@ -8,6 +8,10 @@ module.exports = env => {
       background: "./src/background.js",
       app: "./src/app.js"
     },
+    node: {
+      __dirname: false,
+      __filename: false
+    },
     output: {
       filename: "[name].js",
       path: path.resolve(__dirname, "../app")

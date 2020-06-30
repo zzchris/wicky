@@ -1,0 +1,40 @@
+html, body {
+    font-family: 'Arial', 'sans-serif';
+}
+
+body {
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+#scale-options-container {
+    display: inline-block;
+    text-align: left;
+}
+
+#main {
+   color:white; 
+   height:100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 5vh;
+    width:100%;
+}
+
+.footer-button {
+    border:none;
+    background-color:#24458d;
+    color:white;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+.footer-button:hover {
+    background-color:#2550af;
+}
+#notification {
+    margin-bottom:5vh;
+    visibility: hidden;
+}

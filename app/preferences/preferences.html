@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Preferences</title>
+    <link rel="stylesheet" href="preferences.css">
+</head>
+
+<body>
+    <div id="main">
+        <h1>Default Temperature Scale</h1>
+        <div id="scale-options-container">
+            <!-- <div>
+                <input class="scale-radio" type="radio" name="scale" id="kelvin">
+                <label>Kelvin</label>
+            </div> -->
+            <div>
+                <input class="scale-radio" type="radio" name="scale" id="celcius">
+                <label>Celcius</label>
+            </div>
+            <div>
+                <input class="scale-radio" type="radio" name="scale" id="farenheit">
+                <label>Farenheit</label>
+            </div>
+        </div>
+        <footer>
+            <div id="notification"></div>
+            <button class="footer-button" id='save'>Save</button>
+            <button class="footer-button" id='close'>Close</button>
+        </footer>
+    </div>
+    </div>
+    <script src="./preferences.js"></script>
+</body>
+
+</html>

@@ -124,7 +124,7 @@ function openPreferences() {
     width: 400,
     autoHideMenuBar: true
   })
-  preferenceWindow.loadFile('./preferences/preferences.html')
+  preferenceWindow.loadURL(`file://${__dirname}/preferences/preferences.html`)
 }
 
 function createMainWindow() {
