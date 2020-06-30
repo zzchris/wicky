@@ -6,11 +6,10 @@
   "private": true,
   "author": "Chris Sanders",
   "copyright": "© 2020 Chris Sanders",
-  "homepage": "",
+  "homepage": "https://github.com/wicky",
   "main": "app/background.js",
   "build": {
     "appId": "com.zzchris.wicky",
-    "icon": "./resources/icon.ico",
     "files": [
       "app/**/*",
       "node_modules/**/*",
