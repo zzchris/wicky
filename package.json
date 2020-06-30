@@ -15,6 +15,9 @@
       "node_modules/**/*",
       "package.json"
     ],
+    "nsis": {
+      "uninstallDisplayName": "wicky"
+    },
     "directories": {
       "buildResources": "resources"
     },
