@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wicky</title>
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+
 </head>
 
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -16,67 +18,79 @@
         margin: 0 auto;
         height: 100vh;
         width: 100vw;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .dark-footer {
+        background-image: linear-gradient(141deg, #1f191a 0, #363636 71%, #46403f 100%);
+        color: white;
+        bottom: 0;
+        position: absolute;
+        width: 100vw;
+        padding: 30px;
     }
 </style>
 
 <body>
-    <section class="section hero is-dark is-bold">
-        <div class="hero-body">
-            <div class="container" <div class="level">
-                <div class="level-item">
-                    <figure class="image is-128x128">
-                        <img src="./resources/icons/512x512.png" alt="">
-                    </figure>
-                </div>
+    <div class="hero-body hero is-dark is-bold section">
+        <div class="container" <div class="level">
+            <div class="level-item">
+                <figure class="image is-128x128">
+                    <img src="./resources/icon.png" alt="">
+                </figure>
             </div>
         </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <div class="level">
-                <div class="level-item">
-                    <p>Wicky is a desktop tray application that tells you the current weather in degrees for the city
-                        that you are in. It does not
-                        require
-                        any
-                        setup besides installation.</p>
-                </div>
-            </div>
-            <div class="level">
-                <div class="level-item">
-                    <p>Wicky is built with Electron, so it works for Windows, macOS, and Linux.</p>
-                </div>
-            </div>
-            <br>
-            <!-- <figure class="image"> -->
-            <img src="./images/Annotation 2020-06-28 145539.png" alt="">
-            <!-- </figure> -->
-            <br>
-            <div class="level">
-                <div class="level-item">
-                    <i class="fab fa-windows fa-3x"></i>
-                </div>
-                <div class="level-item">
-                    <i class="fab fa-apple fa-3x"></i>
-                </div>
-                <div class="level-item">
-                    <i class="fab fa-linux fa-3x"></i>
-                </div>
-            </div>
-            <div class="level">
-                <div class="level-item">
-                    <button>Download Windows</button>
-                </div>
-                <div class="level-item">
-                    <button>Download macOS</button>
-                </div>
-                <div class="level-item">
-                    <button>Download Linux</button>
-                </div>
+    </div>
+    <div class="container section">
+        <div class="level">
+            <div class="level-item">
+                <p>wicky is a desktop tray application that tells you the current weather for the city
+                    that you're in. All in a 1-click setup.</p>
             </div>
         </div>
-    </section>
+        <div class="level">
+            <div class="level-item">
+                <p>wicky is built with <a href="https://www.electronjs.org/">Electron</a>, so it works for Windows and
+                    macOS.</p>
+            </div>
+        </div>
+        <br>
+        <div class="level">
+            <div class="level-item">
+                <img src="./images/win_1.png" alt="">
+            </div>
+            <div class="level-item">
+                <img src="./images/mac_4.png" alt="">
+            </div>
+        </div>
+        <br>
+        <div class="level">
+            <div class="level-item">
+                <i class="fab fa-windows fa-3x"></i>
+            </div>
+            <div class="level-item">
+                <i class="fab fa-apple fa-3x"></i>
+            </div>
+        </div>
+        <div class="level">
+            <div class="level-item">
+                <a href="https://github.com/zzchris/wicky/releases/download/1.0.0/wicky.Setup.1.0.0.exe"> <button
+                        class="button">Download Windows</button></a>
+            </div>
+            <div class="level-item">
+                <a href="https://github.com/zzchris/wicky/releases/download/1.0.0/wicky-1.0.0.dmg">
+                    <button class="button">Download macOS</button></a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer is-dark dark-footer">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/zzchris/wicky">Wicky</a> is built by <a
+                    href="https://github.com/zzchris">zzchris</a>
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
